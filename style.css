@@ -105,8 +105,8 @@ header {
 }
 
 .brand-logo {
-  width: 44px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
   flex-shrink: 0;
 }
