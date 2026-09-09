@@ -18,7 +18,7 @@ const products = [
     name: 'Seeded Multigrain',
     price: 10.25,
     description: 'A hearty loaf packed with seeds, grains, and a nutty finish.',
-    image: 'https://images.unsplash.com/photo-1549931314-a545dcf3bc73?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 'cinnamon',
