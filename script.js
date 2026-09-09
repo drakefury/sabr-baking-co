@@ -11,35 +11,35 @@ const products = [
     name: 'Brioche Loaf',
     price: 9.75,
     description: 'Buttery, soft, and perfect for breakfast toast or French toast.',
-    image: 'https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.squarespace-cdn.com/content/v1/69c3028010e2c44571196015/ea4c3ffa-c004-4f13-8ef7-430308f41e0c/Brioche%2BLoaf.png'
   },
   {
     id: 'multigrain',
     name: 'Seeded Multigrain',
     price: 10.25,
     description: 'A hearty loaf packed with seeds, grains, and a nutty finish.',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80'
+    image: 'https://129528774.cdn6.editmysite.com/uploads/1/2/9/5/129528774/WTPW7IO6R2LGDFNOFLI2RJYU.jpeg?optimize=medium&width=2400'
   },
   {
     id: 'cinnamon',
     name: 'Cinnamon Swirl',
     price: 11.0,
     description: 'Sweet, soft, and perfectly spiced for a cozy morning treat.',
-    image: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=900&q=80'
+    image: 'https://itsonly.recipes/images/recipeimages/old-fashioned-cinnamon-bread.webp'
   },
   {
     id: 'olive',
     name: 'Olive Rosemary',
     price: 10.5,
     description: 'Savory and aromatic with a rustic finish perfect with soup or pasta.',
-    image: 'https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=900&q=80'
+    image: 'https://www.argeta.com/_next/image?q=75&url=https%3A%2F%2Fargeta-com.cnj.digital%2Fassets%2Frecipes%2Fmediterranean-bread---cover.jpg&w=1920'
   },
   {
     id: 'rye',
     name: 'Rustic Rye',
     price: 9.5,
     description: 'Deep flavor and a chewy texture with a classic rye character.',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.squarespace-cdn.com/content/v1/5e834c37a53fed49710e00cd/b14478e2-6b5f-42f7-a681-3dedf53e5ced/Seigle%2B.jpg?format=1000w'
   }
 ];
 
