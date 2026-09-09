@@ -177,7 +177,7 @@ function renderCart() {
   `).join('');
 }
 
-function handleCheckout(event) {
+async function handleCheckout(event) {
   event.preventDefault();
 
   const cart = getCart();
@@ -190,19 +190,25 @@ function handleCheckout(event) {
     return;
   }
 
-  const form = event.currentTarget;
-  const formData = new FormData(form);
-  const name = formData.get('name')?.toString().trim() || 'Friend';
-  const total = document.getElementById('total')?.textContent || '$0.00';
+  try {
+    // Send your cart array ([{ id: 'sourdough', quantity: 2 }, ...]) to your Node backend
+    const response = await fetch('/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ cartItems: cart }),
+    });
 
-  saveCart([]);
-  form.reset();
-  renderCart();
+    const data = await response.json();
 
-  const message = document.getElementById('checkout-message');
-  if (message) {
-    message.textContent = `Thank you, ${name}! Your order totaling ${total} has been placed. We’ll get your fresh bread ready soon.`;
-    message.classList.remove('error');
+    if (data.url) {
+      // Safely redirect the user to Stripe's secure checkout page
+      window.location.href = data.url;
+    } else {
+      alert('Could not initiate checkout. Please try again.');
+    }
+  } catch (err) {
+    console.error('Checkout error:', err);
+    alert('An error occurred connecting to the server.');
   }
 }
 
