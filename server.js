@@ -1,3 +1,5 @@
+const path = require('path');
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -7,8 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Serve your static frontend files from the "public" folder
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Map your frontend product IDs (from your cart) to your actual Stripe Price IDs
 const STRIPE_PRICE_MAPPING = {
